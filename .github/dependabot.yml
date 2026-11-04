@@ -1,0 +1,22 @@
+# Vibedata Domain CI Dependabot configuration (written by onboarding to .github/dependabot.yml when the repo has
+# none). One `vibedata` group moves the callers' workflow pins and the .workflow/requirements.txt package pins in
+# one PR per release (D7). Cooldown 0 lets a release arrive on the next daily run; the CI owner's merge is still
+# the gate (D17). This file is customer-owned once written: raise the cooldown or add entries as you need.
+version: 2
+multi-ecosystem-groups:
+  vibedata:
+    schedule:
+      interval: daily
+updates:
+  - package-ecosystem: github-actions
+    directory: "/"
+    multi-ecosystem-group: vibedata
+    patterns: ["accelerate-data/vibedata-official*"]
+    cooldown:
+      default-days: 0
+  - package-ecosystem: pip
+    directory: "/.workflow"
+    multi-ecosystem-group: vibedata
+    patterns: ["vibedata-*"]
+    cooldown:
+      default-days: 0
