@@ -1,2 +1,2 @@
-vibedata-domain-ci==1.0.0rc1
-vibedata-domain-hooks==1.0.0rc1
+vibedata-domain-ci==1.0.0rc2
+vibedata-domain-hooks==1.0.0rc2
