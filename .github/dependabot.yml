@@ -20,3 +20,4 @@ updates:
     patterns: ["vibedata-*"]
     cooldown:
       default-days: 0
+# retest 2: pins on commits with no marketplace tag
