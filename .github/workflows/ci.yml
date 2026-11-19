@@ -2,4 +2,4 @@
 on: workflow_dispatch
 jobs:
   ci:
-    uses: accelerate-data/vibedata-official/.github/workflows/ci.yml@e9b27d5f4e2b69128397ad787d96b93ac457956c  # domain-ci/v0.0.3
+    uses: accelerate-data/vibedata-official/.github/workflows/ci.yml@24036fb5b9ea837f660c5f90546813064c1f5390  # domain-ci/v0.0.4
